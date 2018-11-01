@@ -1,0 +1,4 @@
+By default in Unix buffer is set to line-buffer, so:
+
+in first program the text is written to buffer before fork and printed only after it, so it is written from both child and parent
+in second one the text includes newline character, so, since the buffer is line-buffer, it is instantaneously printed.
